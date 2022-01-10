@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+
+
+<!--
+<form [formGroup] = 'addUser' >
+  <input type="text" id="msg" formControlName='messages' placeholder="message">
+
+  <button (click)="sendMessage()">submit</button> <br>
+
+</form> -->
+<!-- <input type="text" ngModel="message"> -->
+<p [innerHTML]="message"></p>
+<input type="text" #messageInput>
+<button (click)="sendMessage(messageInput.value)">submit</button> <br>
+
+<div *ngFor="let item of messageArr">
+<span>{{item}}</span>
+</div>
+
